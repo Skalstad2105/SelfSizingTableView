@@ -12,6 +12,7 @@ class RootTableViewCell: UITableViewCell {
     
     @IBOutlet weak var heroesLabel: UILabel!
     @IBOutlet weak var informationLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
 
     override func awakeFromNib() {

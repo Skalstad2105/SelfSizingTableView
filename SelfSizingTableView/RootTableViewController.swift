@@ -12,6 +12,7 @@ class RootTableViewController: UITableViewController {
     
     
     var heroes = ["Superman","Batman","Captain America","Spiderman"]
+    var dates = ["21.05.1991","08.01.1989","05.07.1946","13.04.1993"]
     var information = ["Supermann, eller Superman på engelsk, er en fiktiv superhelt i tegneserier utgitt av det amerikanske tegneserieforlaget DC Comics. Rolleskikkelsen ble skapt av Jerry Siegel og Joe Shuster og presentert i tegneserieheftet Action Comics nummer 1 i 1938. Supermann er blant de eldste og mest kjente superheltfigurene i moderne vestlig populærkultur. Det har blitt lagd en mengde tegneseriehistorier samt radioprogrammer, TV-serier og filmer med Supermann i hovedrollen.","Batman (tidligere kjent som Lynvingen i Norge) er en amerikansk tegneseriefigur skapt av Bill Finger og Bob Kane i 1939. Batman er en superhelt iført et flaggermusinspirert kostyme Tegneserien utgis av DC Comics.","Captain America er en tegneseriefigur skapt av Joe Simon og Jack Kirby i 1940.","Spider-Man (på norsk tidligere kjent som Edderkoppen) er en amerikansk tegneserie som ble skapt av Stan Lee og Steve Ditko i 1962. Spider-Man er en superhelt som har edderkoppbaserte evner. Den første historien stod på trykk i Amazing Fantasy #15 i 1962. Dette var siste utgave av Amazing Fantasy, men Spider-Man ble så populær at han fikk sitt eget blad, The Amazing Spider-Man, i 1963."]
 
     override func viewDidLoad() {
@@ -45,6 +46,7 @@ class RootTableViewController: UITableViewController {
 
         // Configure the cell...
         cell.heroesLabel.text = self.heroes[indexPath.row]
+        cell.dateLabel.text = self.dates[indexPath.row]
         cell.informationLabel.text = self.information[indexPath.row]
 
         return cell
