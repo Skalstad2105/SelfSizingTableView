@@ -18,7 +18,7 @@ class RootTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView.estimatedRowHeight = 68
+        self.tableView.estimatedRowHeight = 99
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
         

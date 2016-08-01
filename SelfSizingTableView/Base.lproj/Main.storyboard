@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -15,20 +16,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="98" id="O0e-va-Tld" customClass="RootTableViewCell" customModule="SelfSizingTableView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="68"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="98" id="O0e-va-Tld" customClass="RootTableViewCell" customModule="SelfSizingTableView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="98"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O0e-va-Tld" id="QJR-Fv-KPG">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="67.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="97.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superhero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqF-Cc-XdR">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superhero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqF-Cc-XdR">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JI-vh-lht">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JI-vh-lht">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -61,9 +62,6 @@
                                             <exclude reference="wKM-0C-Ojb"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="D1S-jc-qff"/>
-                                            <exclude reference="Dg3-Qr-fvD"/>
-                                            <exclude reference="Vfx-nD-7mT"/>
                                             <exclude reference="LmY-Yw-e2H"/>
                                             <exclude reference="OKi-5e-QVJ"/>
                                             <exclude reference="RaH-ib-6y7"/>
@@ -72,6 +70,9 @@
                                             <exclude reference="HuX-hR-xN3"/>
                                             <exclude reference="VTW-55-DcY"/>
                                             <exclude reference="mxl-6W-uXn"/>
+                                            <exclude reference="D1S-jc-qff"/>
+                                            <exclude reference="Dg3-Qr-fvD"/>
+                                            <exclude reference="Vfx-nD-7mT"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -81,9 +82,6 @@
                                             <include reference="wKM-0C-Ojb"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="D1S-jc-qff"/>
-                                            <include reference="Dg3-Qr-fvD"/>
-                                            <include reference="Vfx-nD-7mT"/>
                                             <include reference="LmY-Yw-e2H"/>
                                             <include reference="OKi-5e-QVJ"/>
                                             <include reference="RaH-ib-6y7"/>
@@ -92,6 +90,9 @@
                                             <include reference="HuX-hR-xN3"/>
                                             <include reference="VTW-55-DcY"/>
                                             <include reference="mxl-6W-uXn"/>
+                                            <include reference="D1S-jc-qff"/>
+                                            <include reference="Dg3-Qr-fvD"/>
+                                            <include reference="Vfx-nD-7mT"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
